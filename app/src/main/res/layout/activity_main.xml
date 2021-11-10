@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLogic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logic_n_the_game"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:id="@+id/btnNovoJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogic"
+        android:layout_marginTop="4dp"
+        android:text="Novo Jogo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnNovoJogo"
+        android:gravity="center"
+        android:text="Continuar"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnConfiguracoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnContinuar"
+        android:gravity="center"
+        android:text="Configurações"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConfiguracoes"
+        android:gravity="center"
+        android:text="Sair"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
