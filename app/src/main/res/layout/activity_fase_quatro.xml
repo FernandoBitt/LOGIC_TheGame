@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_fases">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:layout_centerHorizontal="true"
+        android:text="Portas Lógicas\n        Fase 4"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageFase4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/fase4lousa" />
+
+
+    <ImageView
+        android:id="@+id/lamp1"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageFase4"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="-115dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnlamp1"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_below="@+id/lamp1"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/config_btn"
+        android:textOff="0"
+        android:textOn="1"
+        android:textSize="10dp"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+
+    <ImageView
+        android:id="@+id/lamp2"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageFase4"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="-115dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnlamp2"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_below="@+id/lamp1"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/config_btn"
+        android:textOff="0"
+        android:textOn="1"
+        android:textSize="10dp"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+
+    <Button
+        android:id="@+id/btnValidar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Validar" />
+
+</RelativeLayout>

@@ -1,58 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_azul"
     android:padding="8dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    <TextView
-        android:id="@+id/txtLogic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/logic_n_the_game"
-        android:layout_marginTop="100dp"
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        />
-
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
 
     <Button
         android:id="@+id/btnNovoJogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtLogic"
-        android:layout_marginTop="4dp"
-        android:text="Novo Jogo"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/imageLogo"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/shape_borda"
+        android:text="Novo Jogo"
         />
 
     <Button
         android:id="@+id/btnContinuar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_margin = "7dp"
         android:layout_below="@id/btnNovoJogo"
         android:gravity="center"
         android:text="Continuar"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_borda"
+        />
+
 
     <Button
         android:id="@+id/btnConfiguracoes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_margin = "7dp"
         android:layout_below="@id/btnContinuar"
         android:gravity="center"
         android:text="Configurações"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_borda"
+        />
 
     <Button
         android:id="@+id/btnSair"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_margin = "7dp"
         android:layout_below="@id/btnConfiguracoes"
         android:gravity="center"
         android:text="Sair"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_borda"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSair"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/portas_sem_fundo"
+        />
+
 
 
 </RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_fases">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:text="Binários\n  Fase 2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/imagelousa"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:src="@drawable/lousafasedois"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/editResposta2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagelousa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:background="@color/gray"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:hint="@string/resposta"
+        />
+
+    <Button
+        android:id="@+id/btnValidar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/validar" />
+
+</RelativeLayout>

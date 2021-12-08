@@ -10,7 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LOGICTheGameV2">
         <activity
-            android:name=".SairActivity"
+            android:name=".MundoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Fase_Cinco_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Fase_Quatro_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Fase_Tres_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Fase_Dois_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Fase_Um_Activity"
             android:exported="false" />
         <activity
             android:name=".ConfiguracoesActivity"

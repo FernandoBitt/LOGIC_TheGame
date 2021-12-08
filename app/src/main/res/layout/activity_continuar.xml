@@ -5,32 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContinuarActivity">
+    tools:context=".ContinuarActivity"
+    android:background="@drawable/background_azul">
 
-
-    <TextView
-        android:id="@+id/txtLogic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/logic_n_the_game"
-        android:layout_marginTop="100dp"
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
 
     <Spinner
         android:id="@+id/SelectNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtLogic" />
+        android:layout_below="@id/imageLogo"
+        android:layout_marginTop="100dp"
+        />
 
     <Button
-        android:id="@+id/btnNovoJogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnContinue"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
         android:layout_below="@id/SelectNome"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="40dp"
         android:text="Continuar"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_borda"
         />
 
 

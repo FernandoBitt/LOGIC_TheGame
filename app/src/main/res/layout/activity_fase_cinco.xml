@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_fases">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:text="Portas Lógicas\n        Fase 5"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageFase5"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:src="@drawable/fase5lousa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/lamp3"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageFase5"
+        android:layout_marginTop="-90dp"
+        android:layout_marginLeft="95dp"
+         />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnlamp3"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_below="@+id/lamp3"
+        android:layout_marginLeft="83dp"
+        android:background="@drawable/config_btn"
+        android:textOff="0"
+        android:textOn="1"
+        android:textSize="10dp"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+
+    <ImageView
+        android:id="@+id/lamp4"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageFase5"
+        android:layout_marginTop="-90dp"
+        android:layout_marginLeft="168dp"
+         />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnlamp4"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_below="@+id/lamp4"
+        android:layout_marginLeft="155dp"
+        android:background="@drawable/config_btn"
+        android:textOff="0"
+        android:textOn="1"
+        android:textSize="10dp"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+
+    <ImageView
+        android:id="@+id/lamp5"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageFase5"
+        android:layout_marginTop="-90dp"
+        android:layout_marginLeft="215dp"
+         />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnlamp5"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_below="@+id/lamp5"
+        android:layout_marginLeft="207dp"
+        android:background="@drawable/config_btn"
+        android:textOff="0"
+        android:textOn="1"
+        android:textSize="10dp"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+
+    <ImageView
+        android:id="@+id/lamp6"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageFase5"
+        android:layout_marginTop="-90dp"
+        android:layout_marginLeft="290dp"
+         />
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btnlamp6"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_below="@+id/lamp6"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/config_btn"
+        android:textOff="0"
+        android:textOn="1"
+        android:textSize="10dp"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+
+
+    <Button
+        android:id="@+id/btnValidar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Validar" />
+
+</RelativeLayout>
